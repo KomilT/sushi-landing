@@ -1,3 +1,136 @@
 {
-  "foo": "bar"
+  "selector": {
+    "items": [
+      {
+        "name": "Bites",
+        "icon": "/assets/icons.svg#bites"
+      },
+      {
+        "name": "Sashimi",
+        "icon": "/assets/icons.svg#sashimi"
+      },
+      {
+        "name": "Nigiri",
+        "icon": "/assets/icons.svg#nigiri"
+      },
+      {
+        "name": "Ramen",
+        "icon": "/assets/icons.svg#ramen"
+      },
+      {
+        "name": "Temaki",
+        "icon": "/assets/icons.svg#temaki"
+      },
+      {
+        "name": "Maki",
+        "icon": "/assets/icons.svg#maki"
+      },
+      {
+        "name": "Bento Box",
+        "icon": "/assets/icons.svg#bento-box"
+      },
+      {
+        "name": "Grill",
+        "icon": "/assets/icons.svg#grill"
+      },
+      {
+        "name": "Gyoza",
+        "icon": "/assets/icons.svg#gyoza"
+      },
+      {
+        "name": "Yakitori",
+        "icon": "/assets/icons.svg#yakitori"
+      },
+      {
+        "name": "Deserts",
+        "icon": "/assets/icons.svg#deserts"
+      },
+      {
+        "name": "Drinks",
+        "icon": "/assets/icons.svg#drinks"
+      }
+    ]
+  },
+
+  "assortment": [
+    {
+      "name": "Salmon avocado",
+      "pieces": 8,
+      "description": "Salmon with avocado, cucumber, rice, nori.",
+      "price": 18,
+      "image": "/assets/img/assortment/1.jpg"
+    },
+    {
+      "name": "Salmon maki",
+      "pieces": 8,
+      "description": "Salmon maki with rice, nori.",
+      "price": 12,
+      "image": "/assets/img/assortment/2.jpg"
+    },
+    {
+      "name": "Avocado Kaburimaki",
+      "pieces": 8,
+      "description": "Avocado Kaburimaki with tobiko, rice, nori.",
+      "price": 18,
+      "image": "/assets/img/assortment/3.jpg"
+    },
+    {
+      "name": "Salmon Kaburimaki",
+      "pieces": 8,
+      "description": "Salmon Kaburimaki with avocado, tobiko, sesame seeds, rice, nori.",
+      "price": 20,
+      "image": "/assets/img/assortment/4.jpg"
+    },
+    {
+      "name": "Avocado maki",
+      "pieces": 8,
+      "description": "Avocado, cucumber, sesame seeds, sweet soy, rice, nori.",
+      "price": 10,
+      "image": "/assets/img/assortment/5.jpg"
+    }
+  ],
+
+  "reviews": [
+    {
+      "author": "Jeanne A",
+      "avatar": "/assets/img/avatar.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elti. Nullam non est a metus tristique dictum.",
+      "date": "May 2, 2015"
+    },
+    {
+      "author": "Jeanne A",
+      "avatar": "/assets/img/avatar.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elti. Nullam non est a metus tristique dictum.",
+      "date": "May 2, 2015"
+    },
+    {
+      "author": "Jeanne A",
+      "avatar": "/assets/img/avatar.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elti. Nullam non est a metus tristique dictum.",
+      "date": "May 2, 2015"
+    }
+  ],
+
+  "instagram": {
+    "photos": [
+      {
+        "url": "/assets/img/instagram/1.jpg"
+      },
+      {
+        "url": "/assets/img/instagram/2.jpg"
+      },
+      {
+        "url": "/assets/img/instagram/3.jpg"
+      },
+      {
+        "url": "/assets/img/instagram/4.jpg"
+      },
+      {
+        "url": "/assets/img/instagram/5.jpg"
+      },
+      {
+        "url": "/assets/img/instagram/6.jpg"
+      }
+    ]
+  }
 }

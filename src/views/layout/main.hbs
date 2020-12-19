@@ -8,8 +8,98 @@
 </head>
 
 <body>
+  <header class="header">
+    <div class="menu">
+      <a class="menu__logo" href="#">
+        <img src="/assets/img/logo.png" alt="Logo" />
+      </a>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <svg>
+            <use href="/assets/icons.svg#menu"></use>
+          </svg>
+        </li>
+        <li class="menu__item">
+          <svg>
+            <use href="/assets/icons.svg#user"></use>
+          </svg>
+          <span>User</span>
+        </li>
+        <li class="menu__item">
+          <svg>
+            <use href="/assets/icons.svg#cart"></use>
+          </svg>
+          <span>Cart</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="headline">
+      <h1>Best delivery in Japanese cuisine</h1>
+      <form class="search" action="">
+        <input class="search__field" type="text" placeholder="Postcode" />
+        <button class="button">
+          <svg>
+            <use href="/assets/icons.svg#search"></use>
+          </svg>
+          Search
+        </button>
+      </form>
+    </div>
+
+    <div class="header__plate"></div>
+  </header>
+
   {{#block "body"}}
   {{/block}}
+
+  <footer class="footer">
+    <ul class="socials">
+      <li class="socials__item">
+        <span>Follow us</span>
+        <a href="#">
+          <svg>
+            <use href="/assets/icons.svg#facebook"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg>
+            <use href="/assets/icons.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#">
+          <svg>
+            <use href="/assets/icons.svg#phone"></use>
+          </svg>
+          <span>020 7287 5766</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#">
+          <svg>
+            <use href="/assets/icons.svg#mail"></use>
+          </svg>
+          <span>info@sushi.co.uk</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <span>Subscribe our newsletter</span>
+        <form class="subscribe">
+          <input class="subscribe__field" type="email" placeholder="E-mail" />
+          <button class="button">Subscribe</button>
+        </form>
+      </li>
+    </ul>
+
+    <div>
+      <svg>
+        <use href="/assets/icons.svg#heart"></use>
+      </svg>
+      <span>We Boomin © 2020</span>
+    </div>
+  </footer>
 </body>
 
 </html>
