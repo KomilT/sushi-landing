@@ -5,38 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sushi</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300;1,600&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-    <div class="menu">
-      <a class="menu__logo" href="#">
-        <img src="/assets/img/logo.png" alt="Logo" />
-      </a>
+    <div class="menu header__menu">
+      <div class="logo menu__logo">
+        <a href="#">
+          <img src="/assets/img/logo.png" alt="Logo" />
+        </a>
+      </div>
       <ul class="menu__list">
         <li class="menu__item">
-          <svg>
-            <use href="/assets/icons.svg#menu"></use>
-          </svg>
+          <a class="menu__link" href="#">
+            <svg class="menu__icon">
+              <use href="/assets/icons.svg#menu"></use>
+            </svg>
+          </a>
         </li>
         <li class="menu__item">
-          <svg>
-            <use href="/assets/icons.svg#user"></use>
-          </svg>
-          <span>User</span>
+          <a class="menu__link" href="#">
+            <svg class="menu__icon">
+              <use href="/assets/icons.svg#user"></use>
+            </svg>
+            <span class="menu__text">User</span>
+          </a>
         </li>
         <li class="menu__item">
-          <svg>
-            <use href="/assets/icons.svg#cart"></use>
-          </svg>
-          <span>Cart</span>
+          <a class="menu__link" href="#">
+            <svg class="menu__icon">
+              <use href="/assets/icons.svg#cart"></use>
+            </svg>
+            <span class="menu__text">Cart</span>
+          </a>
         </li>
       </ul>
     </div>
 
-    <div class="headline">
-      <h1>Best delivery in Japanese cuisine</h1>
-      <form class="search" action="">
+    <div class="headline header__headline">
+      <h1 class="headline__title">Best delivery in <strong>Japanese cuisine</strong></h1>
+      <form class="search" action="" onsubmit="return false;">
         <input class="search__field" type="text" placeholder="Postcode" />
         <button class="button">
           <svg>

@@ -1,0 +1,23 @@
+$placeholder-color: #c9c9c9;
+
+.search {
+  display: flex;
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.search__field {
+  padding-left: 10px;
+  border: none;
+  border-radius: 4px;
+  color: darken($placeholder-color, 40%);
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  outline: none;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+}

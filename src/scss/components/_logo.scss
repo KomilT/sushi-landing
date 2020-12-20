@@ -1,0 +1,8 @@
+.logo {
+  display: none;
+  text-align: center;
+
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+}

@@ -1,0 +1,45 @@
+.header {
+  position: relative;
+  min-height: 80vh;
+  background-color: #000;
+
+  @media (min-width: $screen-md) {
+    min-height: 90vh;
+  }
+}
+
+.header__menu {
+  position: absolute;
+  right: 7px;
+
+  @media (min-width: $screen-md) {
+    right: 0;
+  }
+}
+
+.header__headline {
+  position: relative;
+  top: 70px;
+
+  @media (min-width: $screen-md) {
+    top: 170px;
+  }
+}
+
+.header__plate {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  width: 100%;
+  max-width: 430px;
+  min-height: 285px;
+  background-image: url("/assets/img/plate.png");
+  background-size: cover;
+  transform: translateX(-50%);
+
+  @media (min-width: $screen-md) {
+    right: 28px;
+    left: auto;
+    transform: none;
+  }
+}
