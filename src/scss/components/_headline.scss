@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
 
-  @media (min-width: $screen-md) {
+  @media (min-width: $screen-lg) {
     flex-direction: column;
   }
 }
@@ -20,7 +20,7 @@
   line-height: 36px;
   text-align: right;
 
-  @media (min-width: $screen-md) {
+  @media (min-width: $screen-lg) {
     max-width: none;
     margin-right: 0;
     margin-bottom: 36px;
