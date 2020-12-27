@@ -1,0 +1,124 @@
+$image-height: 145px;
+
+.assortment {
+  display: flex;
+  flex-direction: column;
+}
+
+.assortment__button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4.4rem;
+  box-sizing: border-box;
+  border: none;
+  background-color: rgba(164, 27, 21, 0.8);
+  border-radius: 0 0 8px 8px;
+  color: #fafafa;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 0.1s;
+
+  &:active {
+    transform: translateX(-50%) scale(1.05);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.assortment__price {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  color: #a41b15;
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 1;
+  transform: translateX(-50%);
+  transition: all 0.1s;
+}
+
+.assortment__item {
+  position: relative;
+  width: 100%;
+  max-width: 18.4rem;
+  padding: 0 5px 40px;
+  margin-top: $image-height / 2;
+  background: url("/assets/img/assortment-item-background.png") no-repeat right
+    bottom;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+  color: #a0a0a0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  text-align: center;
+
+  &:hover {
+    .assortment__button {
+      opacity: 1;
+    }
+
+    .assortment__price {
+      opacity: 0;
+    }
+  }
+}
+
+.assortment__name {
+  margin-bottom: 0;
+  color: #401710;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.assortment__image {
+  display: flex;
+  width: 145px;
+  height: $image-height;
+  margin: -($image-height / 2) auto 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+.assortment__description {
+  margin-top: 10px;
+  line-height: 16px;
+}
+
+.assortment__navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  @media (min-width: $screen-lg) {
+    justify-content: flex-end;
+    order: -1;
+    margin-top: 0;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: #db9c24;
+  }
+
+  .slider-button-prev:focus,
+  .slider-button-next:focus {
+    outline: 0;
+  }
+}

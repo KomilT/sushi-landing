@@ -1,6 +1,7 @@
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 import { importAll } from "@lib/import-all";
+import "./js/slider";
 import "./scss/main.scss";
 
 if (process.env.NODE_ENV === "development") {
