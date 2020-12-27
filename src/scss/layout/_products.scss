@@ -1,0 +1,29 @@
+.products {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background: url("/assets/img/products.png") no-repeat;
+  background-color: #fafafa;
+  background-position: right -180px bottom -320px;
+
+  @media (min-width: $screen-lg) {
+    padding-bottom: 220px;
+    background-position: right -130px bottom -60px;
+  }
+}
+
+.products__title {
+  margin-bottom: 40px;
+  color: #401710;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.products__selector {
+  margin-bottom: 5rem;
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 6rem;
+  }
+}

@@ -4,13 +4,19 @@
 
 @import "abstracts/variables";
 
+// @import "vendors/swiper";
+
 @import "base/reset";
 @import "base/base";
 
+@import "layout/grid";
 @import "layout/header";
+@import "layout/products";
 
+// @import "components/assortment";
 @import "components/button";
 @import "components/headline";
 @import "components/logo";
 @import "components/menu";
 @import "components/search";
+// @import "components/selector";
