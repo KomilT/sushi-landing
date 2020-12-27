@@ -1,45 +1,75 @@
 {{#extend "layout/main"}}
 {{#content "body"}}
 <section class="products">
-  <h2>
-    What do you like to order?
-  </h2>
-  <div class="selector">
-    <ul class="selector__list">
-      {{#each selector.items}}
-      <li class="selector__item">
-        <a href="#">
-          <svg>
-            <use href="{{this.icon}}"></use>
-          </svg>
-          <span>
-            {{this.name}}
-          </span>
-        </a>
-      </li>
-      {{/each}}
-    </ul>
-  </div>
-  <div class="assortment">
-    {{#each assortment}}
-    <div class="assortment__item">
-      <div class="assortment__image">
-        <img src="{{this.image}}" alt="" />
-      </div>
-      <h3 class="assortment__title">
-        {{this.name}}
-      </h3>
-      <span>
-        {{this.pieces}} pieces
-      </span>
-      <p>
-        {{this.description}}
-      </p>
-      <span class="assortment__price">
-        £{{this.price}}
-      </span>
+  <div class="container">
+    <h2 class="products__title">
+      What do you like to order?
+    </h2>
+
+    <div class="selector products__selector">
+      <ul class="selector__list">
+        {{#each selector.items}}
+
+        {{#if this.active}}
+        <li class="selector__item selector__item_active">
+          {{else}}
+        <li class="selector__item">
+          {{/if}}
+
+          <button href="#" class="selector__button">
+            <svg class="selector__icon">
+              <use href="{{this.icon}}"></use>
+            </svg>
+            <span class="selector__name">
+              {{this.name}}
+            </span>
+          </button>
+        </li>
+        {{/each}}
+      </ul>
     </div>
-    {{/each}}
+
+    <div class="assortment">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          {{#each assortment}}
+          <div class="swiper-slide">
+            <div class="assortment__item">
+              <div class="assortment__image">
+                <img src="{{this.image}}" alt="" />
+              </div>
+              <h3 class="assortment__name">
+                {{this.name}}
+              </h3>
+              <span>
+                {{this.pieces}} pieces
+              </span>
+              <p class="assortment__description">
+                {{this.description}}
+              </p>
+              <span class="assortment__price">
+                £{{this.price}}
+              </span>
+              <button class="assortment__button">Add to cart</button>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+
+      <div class="assortment__navigation">
+        <div class="slider-button-prev">
+          <svg>
+            <use href="/assets/icons.svg#arrow-left"></use>
+          </svg>
+        </div>
+        <div class="slider-button-next">
+          <svg>
+            <use href="/assets/icons.svg#arrow-right"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

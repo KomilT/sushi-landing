@@ -23,7 +23,8 @@
       },
       {
         "name": "Maki",
-        "icon": "/assets/icons.svg#maki"
+        "icon": "/assets/icons.svg#maki",
+        "active": true
       },
       {
         "name": "Bento Box",
