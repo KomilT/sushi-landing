@@ -1,0 +1,46 @@
+.about {
+  background: #a41b15;
+}
+
+.about__invitation {
+  color: #fafafa;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.3;
+  text-align: center;
+
+  @media (min-width: $screen-lg) {
+    margin-right: 30px;
+    text-align: right;
+  }
+
+  > :first-child {
+    font-size: 34px;
+  }
+
+  > p:nth-of-type(odd) {
+    margin-bottom: 40px;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+.about__info {
+  color: #fafafa;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+
+  @media (min-width: $screen-lg) {
+    max-width: 45%;
+    text-align: right;
+  }
+
+  h2 {
+    font-size: 34px;
+    font-style: italic;
+    font-weight: bold;
+  }
+}

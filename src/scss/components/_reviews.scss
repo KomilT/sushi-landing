@@ -1,0 +1,67 @@
+.reviews {
+  max-width: 436px;
+  padding: 34px 27px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.18);
+
+  @media (min-width: $screen-lg) {
+    padding-bottom: 22px;
+  }
+}
+
+.reviews__list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.reviews__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+.reviews__avatar {
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.22);
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.reviews__text {
+  margin-bottom: 13px;
+  color: #a0a0a0;
+}
+
+.reviews__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviews__author {
+  color: #1a1919;
+  font-weight: 700;
+}
+
+.reviews__date {
+  color: #c9c9c9;
+  font-weight: 600;
+}
+
+.reviews__tripadvisor {
+  text-align: center;
+}
+
+.reviews__content {
+  margin-right: 40px;
+}

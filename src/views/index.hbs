@@ -74,91 +74,102 @@
 </section>
 
 <section class="about">
-  <div class="about__invitation">
-    <p>
-      Our
-      <strong>
-        clients loves
-      </strong>
-      our
-      <strong>
-        sushi
-      </strong>
-      <br />
-      and
-      <strong>
-        not only
-      </strong>
-    </p>
-    <p>
-      Be our next happy client
-      <br />
-      First orders
-      <strong>
-        10% off
-      </strong>
-    </p>
-  </div>
-  <div class="reviews">
-    <ul class="reviews__list">
-      {{#each reviews}}
-      <li class="reviews__item">
-        <div class="reviews__content">
-          <p class="reviews__text">
-            {{this.text}}
+  <div class="container">
+    <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-end">
+      <div class="about__invitation">
+        <p>
+          Our
+          <strong>
+            clients loves
+          </strong>
+          our
+          <strong>
+            sushi
+          </strong>
+          <br />
+          and
+          <strong>
+            not only
+          </strong>
+        </p>
+        <p>
+          Be our next happy client
+          <br />
+          First orders
+          <strong>
+            10% off
+          </strong>
+        </p>
+      </div>
+      <div class="reviews">
+        <ul class="reviews__list">
+          {{#each reviews}}
+          <li class="reviews__item">
+            <div class="reviews__content">
+              <p class="reviews__text">
+                {{this.text}}
+              </p>
+              <div class="reviews__info">
+                <span class="reviews__author">
+                  {{this.author}}
+                </span>
+                <span class="reviews__date">
+                  Reviewed {{this.date}}
+                </span>
+              </div>
+            </div>
+            <div class="reviews__avatar">
+              <img src="{{this.avatar}}" alt="" />
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+        <div class="reviews__tripadvisor">
+          <a href="#">
+            <img src="/assets/img/tripadvisor.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-lg-row align-items-lg-end">
+      <div class="instagram">
+        <div class="instagram__header">
+          <p class="instagram__subtitle">
+            Check our profile on
           </p>
-          <div class="reviews__info">
-            <span class="reviews__author">
-              {{this.author}}
-            </span>
-            <span class="reviews__date">
-              Reviewed {{this.date}}
-            </span>
-          </div>
+          <h2 class="instagram__title">
+            Instagram
+          </h2>
         </div>
-        <div class="reviews__avatar">
-          <img src="{{this.avatar}}" alt="" />
-        </div>
-      </li>
-      {{/each}}
-    </ul>
-    <a href="#">
-      <img src="/assets/img/tripadvisor.png" alt="" />
-    </a>
-  </div>
-  <div class="instagram">
-    <p>
-      Check our profile on
-    </p>
-    <h2>
-      Instagram
-    </h2>
-    <ul class="instagram__list">
-      {{#each instagram.photos}}
-      <li class="instagram__item">
-        <a href="#">
-          <img src="{{this.url}}" alt="" />
-        </a>
-      </li>
-      {{/each}}
-    </ul>
-  </div>
-  <div class="about__info">
-    <h2>
-      About us
-    </h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam egestas
-      wisi a erat. Cras elementum. Nulla pulvinar eleifend sem. Nulla accumsan,
-      elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit
-      diam nulla vel leo. Nullam feugiat, turpis at pulvinar vulputate, erat
-      libero tristique tellus, nec bibendum odio risus sit amet ante. Nullam
-      eget nisl. Maecenas lorem.
-    </p>
-    <p>
-      Nullam sapien sem, ornare ac, nonummy non, Nulla accumsan, elit sit amet
-      varius semper, nulla mauris mollis quam, tempor suscipit lobortis a enim.
-    </p>
+        <ul class="instagram__list">
+          {{#each instagram.photos}}
+          <li class="instagram__item">
+            <a href="#">
+              <img src="{{this.url}}" alt="" />
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="about__info">
+        <h2>
+          About us
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam egestas
+          wisi a erat. Cras elementum. Nulla pulvinar eleifend sem. Nulla accumsan,
+          elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit
+          diam nulla vel leo. Nullam feugiat, turpis at pulvinar vulputate, erat
+          libero tristique tellus, nec bibendum odio risus sit amet ante. Nullam
+          eget nisl. Maecenas lorem.
+        </p>
+        <p>
+          Nullam sapien sem, ornare ac, nonummy non, Nulla accumsan, elit sit amet
+          varius semper, nulla mauris mollis quam, tempor suscipit lobortis a enim.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 {{/content}}
