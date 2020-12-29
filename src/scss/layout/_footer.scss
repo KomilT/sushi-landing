@@ -1,0 +1,16 @@
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0 30px;
+  color: #c9c9c9;
+  font-size: 13px;
+  font-weight: 600;
+
+  svg {
+    width: 11px;
+    height: 11px;
+    margin-right: 10px;
+    fill: #901a14;
+  }
+}
