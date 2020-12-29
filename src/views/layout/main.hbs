@@ -66,46 +66,54 @@
   {{/block}}
 
   <footer class="footer">
-    <ul class="socials">
-      <li class="socials__item">
-        <span>Follow us</span>
-        <a href="#">
-          <svg>
-            <use href="/assets/icons.svg#facebook"></use>
-          </svg>
-        </a>
-        <a href="#">
-          <svg>
-            <use href="/assets/icons.svg#instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a href="#">
-          <svg>
-            <use href="/assets/icons.svg#phone"></use>
-          </svg>
-          <span>020 7287 5766</span>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a href="#">
-          <svg>
-            <use href="/assets/icons.svg#mail"></use>
-          </svg>
-          <span>info@sushi.co.uk</span>
-        </a>
-      </li>
-      <li class="socials__item">
-        <span>Subscribe our newsletter</span>
-        <form class="subscribe">
-          <input class="subscribe__field" type="email" placeholder="E-mail" />
-          <button class="button">Subscribe</button>
-        </form>
-      </li>
-    </ul>
+    <div class="socials">
+      <div class="container">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <span>Follow us</span>
+            <div class="socials__group-icons">
+              <a href="#">
+                <svg>
+                  <use href="/assets/icons.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use href="/assets/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="socials__item">
+            <a href="#">
+              <svg class="mr-3">
+                <use href="/assets/icons.svg#phone"></use>
+              </svg>
+              <span>020 7287 5766</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#">
+              <svg class="mr-3">
+                <use href="/assets/icons.svg#mail"></use>
+              </svg>
+              <span>info@sushi.co.uk</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <div class="socials__form">
+              <span>Subscribe our newsletter</span>
+              <form class="form" onsubmit="return false;">
+                <input class="form__field" type="email" placeholder="E-mail" />
+                <button class="button">Subscribe</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-    <div>
+    <div class="footer__bottom">
       <svg>
         <use href="/assets/icons.svg#heart"></use>
       </svg>
