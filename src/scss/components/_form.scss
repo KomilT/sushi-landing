@@ -1,0 +1,22 @@
+$placeholder-color: #959595;
+
+.form {
+  display: flex;
+  padding: 5px 6px 5px 19px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+.form__field {
+  padding-right: 9px;
+  border: 0;
+  background-color: transparent;
+  color: darken($placeholder-color, 40%);
+  font-size: 13px;
+  font-weight: 600;
+  outline: 0;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+}
