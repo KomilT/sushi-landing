@@ -25,6 +25,14 @@
   strong {
     font-weight: 600;
   }
+
+  br {
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: inline;
+    }
+  }
 }
 
 .about__info {
