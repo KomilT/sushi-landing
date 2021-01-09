@@ -1,8 +1,73 @@
 .about {
-  background: #a41b15;
+  position: relative;
+  z-index: 0;
+  margin-top: -70px;
+  background: url("/assets/img/about-background2.png") 0 264px / cover no-repeat,
+    url("/assets/img/about-background3.png") 612px 445px / cover repeat-x;
+  overflow-x: hidden;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 649px;
+    background-image: url("/assets/img/about-background1.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    content: "";
+
+    @media (min-width: $screen-lg) {
+      background-position: left top;
+      background-size: 100% 649px;
+    }
+  }
+
+  .about__inner {
+    padding-top: 60px;
+
+    @media (min-width: $screen-lg) {
+      position: relative;
+      padding-top: 0;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: -5;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 25%;
+      background-image: linear-gradient(
+          rgba(164, 27, 21, 0.86),
+          rgba(164, 27, 21, 0.86)
+        ),
+        url("/assets/img/store.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+
+      @media (min-width: $screen-lg) {
+        right: -115px;
+        left: auto;
+        width: 55%;
+        height: 448px;
+        background-image: linear-gradient(
+            rgba(164, 27, 21, 0.86),
+            rgba(164, 27, 21, 0.86)
+          ),
+          url("/assets/img/store-big.png");
+        background-size: cover;
+      }
+    }
+  }
 }
 
 .about__invitation {
+  margin-bottom: 40px;
   color: #fafafa;
   font-size: 24px;
   font-style: italic;
@@ -16,10 +81,15 @@
 
   > :first-child {
     font-size: 34px;
+    font-weight: 300;
   }
 
   > p:nth-of-type(odd) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 
   strong {
@@ -35,20 +105,51 @@
   }
 }
 
+.about__reviews {
+  margin-bottom: 40px;
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 0;
+  }
+}
+
+.about__instagram {
+  @media (min-width: $screen-lg) {
+    width: 58%;
+    margin-top: -45px;
+  }
+}
+
 .about__info {
+  max-width: 540px;
+  padding: 40px 0 50px;
+  margin: 0 auto;
   color: #fafafa;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 400;
+  line-height: 1.4;
   text-align: center;
 
   @media (min-width: $screen-lg) {
-    max-width: 45%;
+    width: 40%;
+    padding-bottom: 10px;
+    margin-right: 0;
     text-align: right;
   }
 
+  @media (min-width: $screen-xl) {
+    padding: 80px 0;
+  }
+
   h2 {
+    margin-bottom: 14px;
     font-size: 34px;
     font-style: italic;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  :last-child {
+    margin-bottom: 0;
   }
 }
