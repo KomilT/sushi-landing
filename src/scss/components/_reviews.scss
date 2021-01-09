@@ -1,12 +1,23 @@
 .reviews {
-  max-width: 436px;
-  padding: 34px 27px;
+  width: 100%;
+  max-width: 430px;
+  padding-bottom: 20px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.18);
 
+  @media (min-width: $screen-sm) {
+    padding-top: 15px;
+    padding-bottom: 35px;
+  }
+
   @media (min-width: $screen-lg) {
-    padding-bottom: 22px;
+    padding-bottom: 20px;
+
+    .swiper-wrapper {
+      flex-flow: column;
+      transform: none !important;
+    }
   }
 }
 
@@ -17,9 +28,14 @@
 
 .reviews__item {
   display: flex;
-  align-items: center;
-  margin-bottom: 30px;
+  padding: 20px 15px;
   font-size: 12px;
+  line-height: 13px;
+
+  @media (min-width: $screen-sm) {
+    align-items: center;
+    padding: 20px 25px;
+  }
 }
 
 .reviews__avatar {
@@ -44,13 +60,23 @@
 
 .reviews__info {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $screen-sm) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .reviews__author {
+  margin-bottom: 5px;
   color: #1a1919;
   font-weight: 700;
+
+  @media (min-width: $screen-sm) {
+    margin-bottom: 0;
+  }
 }
 
 .reviews__date {
@@ -59,9 +85,25 @@
 }
 
 .reviews__tripadvisor {
+  margin-top: 10px;
   text-align: center;
+
+  @media (min-width: $screen-lg) {
+    margin-top: 20px;
+  }
 }
 
 .reviews__content {
   margin-right: 40px;
+}
+
+.reviews__rating {
+  margin-bottom: 6px;
+  line-height: 1;
+
+  svg {
+    width: 17px;
+    height: 16px;
+    fill: #fed137;
+  }
 }
