@@ -55,7 +55,7 @@ $content-color: #c9c9c9;
   border-right: none;
 
   @media (min-width: $screen-sm) {
-    background: url("/assets/img/socials-item-background.png") no-repeat;
+    background: url("/assets/img/socials-background.png") no-repeat;
     background-position: right bottom;
   }
 
@@ -93,7 +93,7 @@ $content-color: #c9c9c9;
   }
 }
 
-.socials__form {
+.socials__subscribe {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -102,8 +102,12 @@ $content-color: #c9c9c9;
     flex-direction: row;
     align-items: center;
     text-align: left;
+  }
 
-    span {
+  label {
+    margin-bottom: 0;
+
+    @media (min-width: $screen-sm) {
       margin-right: 30px;
     }
   }
