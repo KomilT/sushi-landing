@@ -28,7 +28,7 @@ module.exports = merge(CommonWebpackConfig, {
     contentBasePublicPath: ["/assets", "/"],
     hot: true,
     open: true,
-    port: 9000,
+    overlay: true,
   },
 
   devtool: "eval-cheap-module-source-map",
