@@ -46,20 +46,26 @@
       </ul>
     </div>
 
-    <div class="headline header__headline">
-      <h1 class="headline__title">Best delivery in <strong>Japanese cuisine</strong></h1>
-      <form class="search" action="" onsubmit="return false;">
-        <input class="search__field" type="text" placeholder="Postcode" />
-        <button class="button">
-          <svg>
-            <use href="/assets/icons.svg#search"></use>
-          </svg>
-          Search
-        </button>
-      </form>
-    </div>
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__headline">
+          <h1 class="header__title">Best delivery in <strong>Japanese cuisine</strong></h1>
+          <form class="search" action="" onsubmit="return false;">
+            <input class="search__field" type="text" placeholder="Postcode" />
+            <button class="button">
+              <svg>
+                <use href="/assets/icons.svg#search"></use>
+              </svg>
+              Search
+            </button>
+          </form>
+        </div>
 
-    <div class="header__plate"></div>
+        <div class="header__plate">
+          <img src="/assets/img/plate.png" alt="">
+        </div>
+      </div>
+    </div>
   </header>
 
   {{#block "body"}}
@@ -101,10 +107,10 @@
             </a>
           </li>
           <li class="socials__item">
-            <div class="socials__form">
-              <span>Subscribe our newsletter</span>
+            <div class="socials__subscribe">
+              <label for="subscribe-field">Subscribe our newsletter</label>
               <form class="form" onsubmit="return false;">
-                <input class="form__field" type="email" placeholder="E-mail" />
+                <input class="form__field" id="subscribe-field" type="email" placeholder="E-mail" />
                 <button class="button">Subscribe</button>
               </form>
             </div>
@@ -117,7 +123,7 @@
       <svg>
         <use href="/assets/icons.svg#heart"></use>
       </svg>
-      <span>We Boomin © 2020</span>
+      <p>We Boomin © <span id="current-year"></span></p>
     </div>
   </footer>
 </body>
