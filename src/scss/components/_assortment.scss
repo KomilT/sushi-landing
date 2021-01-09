@@ -1,8 +1,18 @@
-$image-height: 145px;
+$image-height: 150px;
 
 .assortment {
   display: flex;
   flex-direction: column;
+
+  .swiper-container {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    display: flex;
+    height: auto;
+    justify-content: center;
+  }
 }
 
 .assortment__button {
@@ -45,10 +55,11 @@ $image-height: 145px;
 .assortment__item {
   position: relative;
   width: 100%;
-  max-width: 18.4rem;
+  max-width: 184px;
+  box-sizing: border-box;
   padding: 0 5px 40px;
   margin-top: $image-height / 2;
-  background: url("/assets/img/assortment-item-background.png") no-repeat right
+  background: url("/assets/img/assortment-background.png") no-repeat right
     bottom;
   background-color: #fff;
   border-radius: 8px;
@@ -78,7 +89,7 @@ $image-height: 145px;
 
 .assortment__image {
   display: flex;
-  width: 145px;
+  width: 150px;
   height: $image-height;
   margin: -($image-height / 2) auto 15px;
   background-color: #fff;
@@ -98,11 +109,13 @@ $image-height: 145px;
 }
 
 .assortment__navigation {
+  z-index: 1;
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 25px;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-xl) {
     justify-content: flex-end;
     order: -1;
     margin-top: 0;
@@ -116,8 +129,8 @@ $image-height: 145px;
     fill: #db9c24;
   }
 
-  .slider-button-prev:focus,
-  .slider-button-next:focus {
+  .assortment__button-prev:focus,
+  .assortment__button-next:focus {
     outline: 0;
   }
 }
