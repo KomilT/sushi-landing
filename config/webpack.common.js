@@ -41,7 +41,15 @@ module.exports = {
         loader: "file-loader",
         options: {
           name: "[path][name].[ext]",
-          publicPath: "/",
+        },
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+        options: {
+          attributes: {
+            root: paths.src,
+          },
         },
       },
     ],
