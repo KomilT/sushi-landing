@@ -34,10 +34,6 @@ $image-height: 150px;
   &:active {
     transform: translateX(-50%) scale(1.05);
   }
-
-  &:focus {
-    outline: 0;
-  }
 }
 
 .assortment__price {
@@ -127,10 +123,5 @@ $image-height: 150px;
     width: 30px;
     height: 30px;
     fill: #db9c24;
-  }
-
-  .assortment__button-prev:focus,
-  .assortment__button-next:focus {
-    outline: 0;
   }
 }
