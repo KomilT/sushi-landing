@@ -29,6 +29,14 @@ module.exports = {
         },
       },
       {
+        // videos
+        test: /\.mp4$/i,
+        loader: "file-loader",
+        options: {
+          name: "[path][name].[ext]",
+        },
+      },
+      {
         // svg sprite
         test: /\.svg$/i,
         include: paths.assets.iconsDir,
@@ -51,6 +59,14 @@ module.exports = {
         options: {
           attributes: {
             root: paths.src,
+            list: [
+              "...",
+              {
+                tag: "source",
+                attribute: "data-src",
+                type: "src",
+              },
+            ],
           },
         },
       },
