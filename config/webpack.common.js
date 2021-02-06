@@ -1,6 +1,7 @@
 const ESLintPlugin = require("eslint-webpack-plugin");
 const StylelintPlugin = require("stylelint-webpack-plugin");
 const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const { generateTemplatePlugins } = require("../lib/template-plugins");
 const alias = require("./alias");
 const paths = require("./paths");
@@ -64,5 +65,9 @@ module.exports = {
     new ESLintPlugin(),
     new StylelintPlugin(),
     new SpriteLoaderPlugin(),
+
+    new CopyPlugin({
+      patterns: [{ from: "assets/favicons", to: "" }],
+    }),
   ].concat(templatePlugins),
 };
