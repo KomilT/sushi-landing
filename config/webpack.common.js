@@ -1,7 +1,7 @@
+const CopyPlugin = require("copy-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 const StylelintPlugin = require("stylelint-webpack-plugin");
 const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
-const CopyPlugin = require("copy-webpack-plugin");
 const { generateTemplatePlugins } = require("../lib/template-plugins");
 const alias = require("./alias");
 const paths = require("./paths");
@@ -83,7 +83,14 @@ module.exports = {
     new SpriteLoaderPlugin(),
 
     new CopyPlugin({
-      patterns: [{ from: "assets/favicons", to: "" }],
+      patterns: [
+        {
+          from: "assets/favicon",
+          globOptions: {
+            ignore: ["**/.gitkeep"],
+          },
+        },
+      ],
     }),
   ].concat(templatePlugins),
 };
