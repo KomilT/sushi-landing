@@ -1,6 +1,6 @@
 # sushi-landing
 
-[![License](https://img.shields.io/github/license/KomilT/sushi-landing?color=orange)](https://github.com/KomilT/sushi-landing/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/KomilT/sushi-landing?color=red)](https://github.com/KomilT/sushi-landing/blob/master/LICENSE)
 
 sushi-landing is a landing page built with [webpack-boilerplate](https://github.com/KomilT/webpack-boilerplate).<br>
 You can access the demo [here](https://komilt.github.io/sushi-landing/).
