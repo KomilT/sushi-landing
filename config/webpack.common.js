@@ -29,20 +29,19 @@ module.exports = {
         },
       },
       {
-        // videos
-        test: /\.mp4$/i,
-        loader: "file-loader",
-        options: {
-          name: "[path][name].[ext]",
-        },
-      },
-      {
         // svg sprite
         test: /\.svg$/i,
         include: paths.assets.iconsDir,
         loader: "svg-sprite-loader",
         options: {
           outputPath: "",
+        },
+      },
+      {
+        test: /\.mp4$/i,
+        loader: "file-loader",
+        options: {
+          name: "[path][name].[ext]",
         },
       },
       {
