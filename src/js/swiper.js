@@ -3,7 +3,6 @@ import Swiper from "swiper/bundle";
 import "swiper/swiper-bundle.css";
 
 const assortmentSwiper = new Swiper(".assortment .swiper-container", {
-  loop: true,
   slidesPerView: 1,
 
   navigation: {

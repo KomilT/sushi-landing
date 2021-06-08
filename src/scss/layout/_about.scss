@@ -19,19 +19,14 @@
     background-repeat: no-repeat;
     content: "";
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $breakpoint-lg) {
       background-position: left top;
       background-size: 100% 649px;
     }
   }
 
   .about__inner {
-    padding-top: 60px;
-
-    @media (min-width: $screen-lg) {
-      position: relative;
-      padding-top: 0;
-    }
+    padding-top: rem(60px);
 
     &::after {
       position: absolute;
@@ -50,12 +45,17 @@
       background-size: cover;
       content: "";
 
-      @media (min-width: $screen-lg) {
+      @media (min-width: $breakpoint-lg) {
         right: -115px;
         left: auto;
         width: 55%;
         height: 448px;
       }
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      position: relative;
+      padding-top: 0;
     }
   }
 }
@@ -67,11 +67,6 @@
   font-style: italic;
   line-height: 1.3;
   text-align: center;
-
-  @media (min-width: $screen-lg) {
-    margin-right: 30px;
-    text-align: right;
-  }
 
   > :first-child {
     font-size: 34px;
@@ -93,22 +88,27 @@
   br {
     display: none;
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $breakpoint-lg) {
       display: inline;
     }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    margin-right: 30px;
+    text-align: right;
   }
 }
 
 .about__reviews {
   margin-bottom: 40px;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $breakpoint-lg) {
     margin-bottom: 0;
   }
 }
 
 .about__instagram {
-  @media (min-width: $screen-lg) {
+  @media (min-width: $breakpoint-lg) {
     width: 58%;
     margin-top: -45px;
   }
@@ -124,17 +124,6 @@
   line-height: 1.4;
   text-align: center;
 
-  @media (min-width: $screen-lg) {
-    width: 40%;
-    padding-bottom: 10px;
-    margin-right: 0;
-    text-align: right;
-  }
-
-  @media (min-width: $screen-xl) {
-    padding: 80px 0;
-  }
-
   h2 {
     margin-bottom: 14px;
     font-size: 34px;
@@ -145,5 +134,16 @@
 
   :last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    width: 40%;
+    padding-bottom: 10px;
+    margin-right: 0;
+    text-align: right;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    padding: 80px 0;
   }
 }

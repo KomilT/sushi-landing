@@ -5,16 +5,8 @@
 
 .products__inner {
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 80px;
-
-  @media (min-width: $screen-sm) {
-    padding-top: 100px;
-  }
-
-  @media (min-width: $screen-xl) {
-    padding-bottom: 220px;
-  }
+  padding-top: rem(40px);
+  padding-bottom: rem(80px);
 
   &::after {
     position: absolute;
@@ -28,9 +20,17 @@
     background-repeat: no-repeat;
     content: "";
 
-    @media (min-width: $screen-xl) {
+    @media (min-width: $breakpoint-xl) {
       background-position: right -100px bottom -30px;
     }
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    padding-top: rem(100px);
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    padding-bottom: rem(220px);
   }
 }
 
@@ -43,9 +43,9 @@
 }
 
 .products__selector {
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
 
-  @media (min-width: $screen-xl) {
-    margin-bottom: 6rem;
+  @media (min-width: $breakpoint-xl) {
+    margin-bottom: 60px;
   }
 }

@@ -1,57 +1,55 @@
 {
-  "selector": {
-    "items": [
-      {
-        "name": "Bites",
-        "icon": "#bites"
-      },
-      {
-        "name": "Sashimi",
-        "icon": "#sashimi"
-      },
-      {
-        "name": "Nigiri",
-        "icon": "#nigiri"
-      },
-      {
-        "name": "Ramen",
-        "icon": "#ramen"
-      },
-      {
-        "name": "Temaki",
-        "icon": "#temaki"
-      },
-      {
-        "name": "Maki",
-        "icon": "#maki",
-        "active": true
-      },
-      {
-        "name": "Bento Box",
-        "icon": "#bento-box"
-      },
-      {
-        "name": "Grill",
-        "icon": "#grill"
-      },
-      {
-        "name": "Gyoza",
-        "icon": "#gyoza"
-      },
-      {
-        "name": "Yakitori",
-        "icon": "#yakitori"
-      },
-      {
-        "name": "Deserts",
-        "icon": "#deserts"
-      },
-      {
-        "name": "Drinks",
-        "icon": "#drinks"
-      }
-    ]
-  },
+  "selectors": [
+    {
+      "name": "Bites",
+      "icon": "#bites"
+    },
+    {
+      "name": "Sashimi",
+      "icon": "#sashimi"
+    },
+    {
+      "name": "Nigiri",
+      "icon": "#nigiri"
+    },
+    {
+      "name": "Ramen",
+      "icon": "#ramen"
+    },
+    {
+      "name": "Temaki",
+      "icon": "#temaki"
+    },
+    {
+      "name": "Maki",
+      "icon": "#maki",
+      "active": true
+    },
+    {
+      "name": "Bento Box",
+      "icon": "#bento-box"
+    },
+    {
+      "name": "Grill",
+      "icon": "#grill"
+    },
+    {
+      "name": "Gyoza",
+      "icon": "#gyoza"
+    },
+    {
+      "name": "Yakitori",
+      "icon": "#yakitori"
+    },
+    {
+      "name": "Deserts",
+      "icon": "#deserts"
+    },
+    {
+      "name": "Drinks",
+      "icon": "#drinks"
+    }
+  ],
 
   "assortment": [
     {
@@ -88,6 +86,20 @@
       "description": "Avocado, cucumber, sesame seeds, sweet soy, rice, nori.",
       "price": 10,
       "image": "/assets/img/assortment/5.jpg"
+    },
+    {
+      "name": "Avocado Kaburimaki",
+      "pieces": 8,
+      "description": "Avocado Kaburimaki with tobiko, rice, nori.",
+      "price": 18,
+      "image": "/assets/img/assortment/3.jpg"
+    },
+    {
+      "name": "Salmon Kaburimaki",
+      "pieces": 8,
+      "description": "Salmon Kaburimaki with avocado, tobiko, sesame seeds, rice, nori.",
+      "price": 20,
+      "image": "/assets/img/assortment/4.jpg"
     }
   ],
 

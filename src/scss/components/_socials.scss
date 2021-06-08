@@ -21,7 +21,7 @@ $content-color: #c9c9c9;
   margin: 0 (-$item-padding) 0;
   list-style: none;
 
-  @media (min-width: $screen-sm) {
+  @media (min-width: $breakpoint-sm) {
     margin: 0 (-$item-padding * 2) 0;
   }
 }
@@ -35,16 +35,16 @@ $content-color: #c9c9c9;
   font-size: 14px;
   font-weight: 700;
 
-  @media (min-width: $screen-sm) {
-    padding: $item-padding * 2;
-    border-right: 1px solid $border-color;
-  }
-
   a {
     display: flex;
     align-items: center;
     color: $content-color;
     text-decoration: none;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    padding: $item-padding * 2;
+    border-right: 1px solid $border-color;
   }
 }
 
@@ -54,17 +54,6 @@ $content-color: #c9c9c9;
   padding: $item-padding;
   border-right: none;
 
-  @media (min-width: $screen-sm) {
-    background: url("/assets/img/socials-background.png") no-repeat;
-    background-position: right bottom;
-  }
-
-  @media (min-width: $screen-xl) {
-    flex-basis: auto;
-    padding: $item-padding * 2;
-    background-size: auto 100%;
-  }
-
   &::before {
     position: absolute;
     top: 0;
@@ -73,9 +62,20 @@ $content-color: #c9c9c9;
     border-top: 1px solid $border-color;
     content: "";
 
-    @media (min-width: $screen-xl) {
+    @media (min-width: $breakpoint-xl) {
       display: none;
     }
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    background: url("/assets/img/socials-background.png") no-repeat;
+    background-position: right bottom;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    flex-basis: auto;
+    padding: $item-padding * 2;
+    background-size: auto 100%;
   }
 }
 
@@ -98,17 +98,17 @@ $content-color: #c9c9c9;
   flex-direction: column;
   text-align: center;
 
-  @media (min-width: $screen-sm) {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-  }
-
   label {
     margin-bottom: 0;
 
-    @media (min-width: $screen-sm) {
+    @media (min-width: $breakpoint-sm) {
       margin-right: 30px;
     }
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
   }
 }
